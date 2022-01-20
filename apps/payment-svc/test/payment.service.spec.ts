@@ -69,8 +69,8 @@ describe('Payment service Unit test', () => {
         OgmaModule.forFeature('PaymentServiceImpl'),
         MikroOrmModule.forRoot({
           type: 'postgresql',
-          dbName: 'test',
-          user: 'dbuser',
+          dbName: 'test_db',
+          user: 'test',
           password: '',
           debug: true,
           autoLoadEntities: true,

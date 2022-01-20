@@ -12,8 +12,8 @@ export class Billing {
   @Property()
   identityToken: string;
 
-  @Property()
-  customerUid = 'aa';
+  @Property({ default: 'aaa' })
+  customerUid: string;
 
   @Property({ nullable: true })
   cardName?: string;

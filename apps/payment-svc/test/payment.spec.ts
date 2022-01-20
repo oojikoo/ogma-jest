@@ -22,7 +22,7 @@ import * as PaymentDto from '../src/app/interfaces/payment.dto';
 import * as PaymentResponse from '../src/app/interfaces/payment.response';
 import { getOrderMerchantUid } from '../src/helper/order-info.helper';
 
-// jest.mock('uuid', () => ({ v4: () => '00000000-0000-0000-0000-000000000000' }));
+jest.mock('uuid', () => ({ v4: () => '00000000-0000-0000-0000-000000000000' }));
 
 const mockPaymentApi = {
   requestPayment: jest.fn(),
@@ -56,7 +56,7 @@ describe('Payment integration test', () => {
         }),
         MikroOrmModule.forRoot({
           type: 'postgresql',
-          dbName: 'test',
+          dbName: 'test_db',
           user: 'test',
           password: '',
           debug: true,

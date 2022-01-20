@@ -24,8 +24,8 @@ import { PaymentModule } from './payment.module';
     // OgmaModule.forFeature(AppService, ),
     MikroOrmModule.forRoot({
       type: 'postgresql',
-      dbName: 'test',
-      user: 'dbuser',
+      dbName: 'test_db',
+      user: 'test',
       password: '',
       debug: ['query', 'query-params'],
       autoLoadEntities: true,
