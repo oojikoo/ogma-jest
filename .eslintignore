@@ -1,0 +1,4 @@
+**/entities/*.ts
+!**/entities/*.entity.ts
+!**/entities/index.ts
+!**/entities/baseEntity.ts

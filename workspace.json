@@ -1,0 +1,8 @@
+{
+  "version": 2,
+  "projects": {
+    "core": "libs/core",
+    "payment-svc": "apps/payment-svc",
+    "util": "libs/util"
+  }
+}
